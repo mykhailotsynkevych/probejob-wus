@@ -58,7 +58,14 @@ img {
 .logo-link {
   display: flex;
   align-items: center;
+  color: #000000;
+  fill: #000000;
 }
+
+/* .logo-fill {
+
+  fill: #000000;
+} */
 
 .site-nav {
   display: flex;
@@ -91,6 +98,11 @@ img {
   font-weight: 700;
 }
 
+.search-button {
+  background: rgba(250, 250, 250, 0.5);
+  backdrop-filter: blur(9.51399px);
+}
+
 .description-wrapper {
   margin-top: 166px;
 }
@@ -115,6 +127,15 @@ img {
   line-height: 26px;
 
   color: var(--black-text-color);
+}
+
+.icons-list {
+  display: flex;
+  /* fill: gray; */
+}
+
+.icons-item {
+  fill: gray;
 }
 
 .bottom-wrapper {
