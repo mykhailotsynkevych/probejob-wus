@@ -50,7 +50,7 @@ img {
 .overlay {
   height: 100vh;
   background-image: url(../images/Bitmap1.png), url(../images/Bitmap2.png);
-  background-position: top 0px right 130px, bottom 0px left 480px;
+  background-position: top 0px right 130px, bottom 0px left 370px;
   background-repeat: no-repeat;
   margin: 0px;
 }
@@ -70,6 +70,12 @@ img {
   align-items: center;
   color: #000000;
   fill: #000000;
+  transition: scale 0.3s ease 0s;
+}
+
+.logo-link:hover,
+.logo-link:focus {
+  scale: 1.1;
 }
 
 .site-nav {
@@ -100,9 +106,7 @@ img {
 }
 
 .search-button {
-  background: rgba(250, 250, 250, 0.5);
-  backdrop-filter: blur(9.51399px);
-
+  background: rgba(250, 250, 250, 0.0);
   transition: scale 0.3s ease 0s;
 }
 
@@ -112,13 +116,20 @@ img {
   scale: 1.1;
 }
 
-.hero-section--overlay {
+.nav-basket {
+  background: rgba(250, 250, 250, 0.0);
+  transition: scale 0.3s ease 0s;
+}
 
-  bottom: 0px;
+.nav-basket:hover,
+.nav-basket:focus {
+  cursor: pointer;
+  scale: 1.1;
 }
 
 .description-wrapper {
   margin-top: 166px;
+  margin-left: 116px;
 }
 
 .main-title {
@@ -146,6 +157,7 @@ img {
 .icons-list {
   display: flex;
   align-items: center;
+  margin-bottom: 10px;
 }
 
 .icons-item {
@@ -166,7 +178,9 @@ img {
 
 .bottom-wrapper {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
+  margin: 0px 51px 75px 116px;
+  justify-content: space-between;
 }
 
 .buy-wrapper {
@@ -181,7 +195,7 @@ img {
   padding: 5px 0px;
   width: 282px;
   border: none;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid rgb(0, 0, 0, 0.1);
   
 
   font-style: normal;
@@ -202,21 +216,21 @@ img {
 
 .buy-button {
   margin-right: 39px;
-  padding: 26px 23px;
+  padding: 25px 33px;
   border-radius: 35px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
 
-  transition: transform 0.3s ease 0s;
+  transition: scale 0.3s ease 0s;
 
   color: var(--black-text-color);
   background-color: var(--primary-white-color);
 }
 
 .buy-button:hover {
-  transform: translateY(-3px);
+  scale: 1.05;
 }
 
 .buy-price {
