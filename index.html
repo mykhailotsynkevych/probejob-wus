@@ -12,24 +12,22 @@
       rel="stylesheet"
     />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <div class=" container overlay">
+    <div class="container overlay">
       <!-- HEADER -->
       <header>
         <div class="header-wrapper">
-          <a href="./index.html" >
+
+          <a href="./index.html">
             <svg fill="black" class="logo-link">
-              <use
-                href="./images/symbol-defs.svg#icon-Logo"
-                class="logo-fill"
-              ></use>
-            </svg>
-          </a>
+              <use href="./images/symbol-defs.svg#icon-Logo" class="logo-fill"></use>
+            </svg></a>
+            
           <nav class="nav-wrapper">
             <ul class="site-nav list">
               <li><a href="#" class="nav-item link">What’s New</a></li>
@@ -39,54 +37,82 @@
               <li><a href="#" class="nav-item link">Personalize</a></li>
               <li><a href="#" class="nav-item link">Collections</a></li>
               <li><a href="#" class="nav-item link">Sales</a></li>
-              <li>
-                <button data-search-input-open type="button" class="search-button">
-                  <svg
-                    width="18"
-                    height="18"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
+              <li><button
+                  data-search-input-open
+                  type="button"
+                  class="search-button">
+                  <svg width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg" >
                     <g opacity="0.7">
-                      <circle
-                        cx="9"
-                        cy="9"
-                        r="8"
-                        stroke="black"
-                        stroke-width="2"
-                      />
+                      <circle cx="9" cy="9" r="8" stroke="black" stroke-width="2" />
                       <path d="M14 14L18 18" stroke="black" stroke-width="2" />
                     </g>
                   </svg>
                 </button>
               </li>
             </ul>
+            
+            <!-- MOBILE NAVIGATION -->
+            <div class="menu-menu">
+              <button
+                type="button"
+                class="menu-button"
+                data-menu-button
+                aria-label="Переключатель мобильного меню">Menu</button>
+              <div class="menu-container" data-menu>
+                <ul class="mobile-menu__main-nav list">
+                  <li><a href="#" class="nav-item link">What’s New</a></li>
+                  <li><a href="#" class="nav-item link current">Men</a></li>
+                  <li><a href="#" class="nav-item link">Women</a></li>
+                  <li><a href="#" class="nav-item link">Kids</a></li>
+                  <li><a href="#" class="nav-item link">Personalize</a></li>
+                  <li><a href="#" class="nav-item link">Collections</a></li>
+                  <li><a href="#" class="nav-item link">Sales</a></li>
+                  <li>
+                    <button
+                      data-search-input-open
+                      type="button"
+                      class="search-button"
+                    >
+                      <svg width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg" >
+                        <g opacity="0.7">
+                          <circle  cx="9" cy="9" r="8" stroke="black" stroke-width="2" />
+                          <path d="M14 14L18 18" stroke="black" stroke-width="2" />
+                        </g>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </nav>
 
           <button class="nav-basket">
-              <svg width="25" height="21" fill="black">
-                <use href="./images/symbol-defs.svg#icon-basket"></use>
-              </svg>
+            <svg width="25" height="21" fill="black">
+              <use href="./images/symbol-defs.svg#icon-basket"></use>
+            </svg>
           </button>
         </div>
       </header>
       <main>
+
         <!-- DESCRIPTION -->
+
         <section class="description-section">
-            <h1 class="main-title">Feel strong<br />like Lebron</h1>
-            <p class="description-text">
-              The LeBron 17 LMTD features a large
-              <span class="accent-text">Max Air</span> unit in the heel and Zoom
-              Air cushioning for extra <span class="accent-text">comfort</span>.
-            </p>
-            <p class="description-text">
-              Knit material wraps your feet for
-              <span class="accent-text">lightweight</span> support so you can
-              make quick, powerful moves like a champ.
-            </p>
+          <h1 class="main-title">Feel strong<br />like Lebron</h1>
+          <p class="description-text">
+            The LeBron 17 LMTD features a large
+            <span class="accent-text">Max Air</span> unit in the heel and Zoom
+            Air cushioning for extra <span class="accent-text">comfort</span>.
+          </p>
+          <p class="description-text">
+            Knit material wraps your feet for
+            <span class="accent-text">lightweight</span> support so you can make
+            quick, powerful moves like a champ.
+          </p>
         </section>
 
         <div class="bottom-wrapper">
+
           <!-- ICONS -->
           <ul class="icons-list list">
             <li>
@@ -108,18 +134,18 @@
                 <svg width="48" height="22">
                   <use href="./images/symbol-defs.svg#icon-Group-8"></use>
                 </svg>
-            </button>
+              </button>
             </li>
           </ul>
 
           <!-- BUY -->
           <div class="buy-wrapper">
-              <select id="size" name="size" class="buy-select">
-                <option value="41" class="size-value">EU 41</option>
-                <option value="42" class="size-value">EU 42</option>
-                <option value="43" class="size-value" selected>EU 43</option>
-                <option value="44" class="size-value">EU 44</option>
-              </select>
+            <select id="size" name="size" class="buy-select">
+              <option value="41" class="size-value">EU 41</option>
+              <option value="42" class="size-value">EU 42</option>
+              <option value="43" class="size-value" selected>EU 43</option>
+              <option value="44" class="size-value">EU 44</option>
+            </select>
             <div class="buy-bottom-wrapper">
               <button class="buy-button">Add to basket</button>
               <p class="buy-price">&#65284;249</p>
@@ -128,33 +154,30 @@
         </div>
       </main>
     </div>
+
     <!-- BACKDROP+MODAL -->
     <div class="backdrop is-hidden" search-input>
-        <form class="search-input">
-          <button type="button" class="search-button">
-            <svg
-              width="18"
-              height="18"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g opacity="0.7">
-                <circle
-                  cx="9"
-                  cy="9"
-                  r="8"
-                  stroke="black"
-                  stroke-width="2"
-                />
-                <path d="M14 14L18 18" stroke="black" stroke-width="2" />
-              </g>
-            </svg>
-          </button>
-          <input type="text" name="search" placeholder="write the word here..." class="form-input" />
-          <button data-search-input-close class="search-input-button-close">&#10006;</button>
-        </form>
+      <form class="search-input">
+        <button type="button" class="search-button">
+          <svg width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg" >
+            <g opacity="0.7">
+              <circle cx="9" cy="9" r="8" stroke="black" stroke-width="2" />
+              <path d="M14 14L18 18" stroke="black" stroke-width="2" />
+            </g>
+          </svg>
+        </button>
+        <input
+          type="text"
+          name="search"
+          placeholder="write the word here..."
+          class="form-input"
+        />
+        <button data-search-input-close class="search-input-button-close">
+          &#10006;
+        </button>
+      </form>
     </div>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/search-input.js"></script>
-
   </body>
 </html>
