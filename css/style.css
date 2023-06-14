@@ -58,6 +58,7 @@ img {
 /* OVERLAY */
 
 .overlay {
+  height: 100vh;
   background-image: url(../images/Bitmap1.png), url(../images/Bitmap2.png);
   background-position: top 0px right 130px, bottom 0px right 420px;
   background-repeat: no-repeat;
@@ -470,7 +471,7 @@ img {
   }
 
   .overlay {
-    background-position: top 0px right -70px, bottom 0px right 0px;
+    background-position: top 0px right -70px, bottom 0px left 0px;
   }
 
   .main-title {
